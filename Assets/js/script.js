@@ -1,5 +1,5 @@
 //Define API KEYS
-const _mlb_api_key = "5b51793475924af2b6a167f98ebb328d";
+const _mlb_api_key = "REMOVED_FOR_SECURITY";
 
 // MAKE SURE TO INSERT YOUR GOOGLE MAPS API KEY IN THE HTML FILE TOO!
 
