@@ -16,7 +16,7 @@ Our goal was to create a more connected experience where a fan could find a Spri
 
 ## How It Works
 
-The application combines MLB Spring Training data with Google location services.
+The application combines MLB Spring Training data, stadium locations, Google Maps, and hotel search data to help fans plan trips around the games they want to attend.
 
 1. MLB schedule, team, and stadium data are loaded into the application.
 2. Users browse available Spring Training games.
@@ -49,11 +49,17 @@ The completed project received an **A** in the University of Arizona program.
 
 ## APIs & Data
 
-### SportsData.io
+### SportsData.io API
 
 SportsData.io was used to retrieve MLB data required by the application, including Spring Training schedules, teams, and stadiums.
 
 Team and stadium data is cached locally because that information changes relatively infrequently. Schedule data is retrieved on refresh because game information can change more frequently.
+
+### Hotels.com API
+
+The Hotels.com API was used to retrieve lodging information for destinations near selected Spring Training stadiums.
+
+This allowed the application to connect game and stadium data with nearby hotel options so users could move from choosing a game to planning lodging within the same travel workflow.
 
 ### Google Maps & Places
 
@@ -86,6 +92,7 @@ The project provided hands-on experience with:
 - jQuery
 - Tailwind CSS
 - SportsData.io API
+- Hotels.com API
 - Google Maps / Places API
 - Local browser storage
 - Git / GitHub
