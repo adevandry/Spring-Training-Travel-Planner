@@ -1,80 +1,125 @@
+# Spring Training Travel Planner
 
-# Project Title: Spring Training Travel Planner📫 🚀 💡
+An API-driven baseball travel application that helps fans find MLB Spring Training games, locate stadiums, and discover nearby hotels in Arizona and Florida.
 
-As a baseball fan, I want to search the MLB Spring Training schedule and book a hotel near the stadium so that I can watch my favorite team play.
+## Overview
 
-Spring Training Travel Planner we are building a website that allows users to search MLB game schedules for Spring Training and then buy tickets for select games and book a hotel near the location of the chosen games.
+Spring Training Travel Planner was developed as part of a University of Arizona software development program.
 
-Provide a step by step process to users, instructing them to find the game and location they want to attend, and then using that info to book a nearby hotel room.
-A list of games and locations would be created and then fixed tothe page so as the user scrolls below to select hotel booking options they will also have the list of selected games visibly available.
+The application was designed around a simple problem: Spring Training fans often need to coordinate game schedules, stadium locations, tickets, and lodging across multiple websites.
 
-## 🚀 Overview
-- Demonstrated how Google Places API can be used with SportsData.io API to fetch MLB Spring Training matches and search hotels around the match venue.
-## 🚀 Implementation
-- While page loads, on the DOMContentLoadedEvent, the module will try and load all MLB data ( Schedule, Teams, Stadiums )
-- Teams & Stadiums data is cached locally to make efficient use of the APIs, so if a user already visited the page they won't require a new data fetch as data will still be cached.
-- Schedule data could potentially change regularly so it is fetched on each refresh.
-- Once MLB data is loaded and rendered, the map gets initialized.
-- Click on the search button under any matches and the map will get updated at the top to show nearby hotels.
-User can also navigate the map using the mouse and hit the "Search Nerby" to look for nearby hotels.
+Our goal was to create a more connected experience where a fan could find a Spring Training game, identify the stadium where it was being played, and search for nearby lodging without having to independently research each part of the trip.
 
+## User Story
 
-💡 ## Color Reference 💡
+> As a baseball fan, I want to search the MLB Spring Training schedule and find a hotel near the stadium so that I can plan a trip to watch my favorite team play.
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| background | #ffffff |
-| text | color: #ffffff |
-| background-color: |  gold!important |
-| background-color | rgba(6, 6, 56, 1) |
+## How It Works
 
+The application combines MLB Spring Training data with Google location services.
 
-🚀 ## Deployment
+1. MLB schedule, team, and stadium data are loaded into the application.
+2. Users browse available Spring Training games.
+3. Selecting a game connects that game with its stadium and location.
+4. Google Maps displays the corresponding geographic area.
+5. Users can search for hotels near the selected stadium.
 
-To deploy this project run
+Team and stadium information is cached locally to reduce unnecessary API requests. Because schedules can change more frequently, schedule data is retrieved again when the application is refreshed.
 
-```bash
-  link- https://github.com/jeannav/Spring-Training-Travel-Planner/tree/main
-  Github link- https://jeannav.github.io/Spring-Training-Travel-Planner/
-```
+Once the baseball data has loaded and rendered, the map is initialized and connected to the game-selection interface.
 
+## My Contribution
 
-📫 ## Authors
+I served as the **primary developer** on this three-person University of Arizona software development project and completed the majority of the application's design and technical implementation.
 
-- [Amanda Hardin](https://www.github.com/AHardin77)
-- [Jeanna Vasquez-Garza](https://www.github.com/jeannav)
-- [Aaron DeVandry](https://www.github.com/adevandry)
+My work included:
 
+- Developing the primary application interface and user experience
+- Building JavaScript functionality and application logic
+- Integrating MLB schedule, team, and stadium data
+- Integrating Google Maps and Places functionality
+- Connecting selected games with stadium locations and nearby hotel searches
+- Developing the user flow from game discovery to travel planning
+- Working with API responses and translating external data into usable interface elements
+- Implementing responsive front-end layouts
+- Testing, debugging, and refining the application
+- Contributing to the overall product concept and technical architecture
 
-📫 ## Acknowledgements
+The completed project received an **A** in the University of Arizona program.
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - Youtube tailwind
- 
+## APIs & Data
 
+### SportsData.io
 
-💡 ## Resources Used
-📫 Technologies Used 📫
-- HTML
-- CSS
-- Javascript
-- Jquery
-- Tailwind CSS 
-- API MLB- https://sportsdata.io/ 
-- API Google Maps
+SportsData.io was used to retrieve MLB data required by the application, including Spring Training schedules, teams, and stadiums.
 
+Team and stadium data is cached locally because that information changes relatively infrequently. Schedule data is retrieved on refresh because game information can change more frequently.
 
-💡 ## Screenshots
+### Google Maps & Places
 
-1. <img width="1384" alt="Screen Shot 2023-02-14 at 2 22 37 PM" src="https://user-images.githubusercontent.com/109550438/218866188-d11485c3-5060-4239-8715-606ca85cb462.png">
+Google Maps and Places functionality connects the baseball data with geographic information.
 
-2. <img width="1384" alt="Screen Shot 2023-02-14 at 2 22 47 PM" src="https://user-images.githubusercontent.com/109550438/218866206-9f7287bf-14d6-4f5d-a7de-13fe78a8f137.png">
+After selecting a game, users can view the corresponding stadium area and search for nearby hotels. Users can also navigate the map and perform searches around a selected location.
 
-3. <img width="1429" alt="Screen Shot 2023-02-14 at 2 23 06 PM" src="https://user-images.githubusercontent.com/109550438/218866339-7a795d8b-53d0-4040-a5b3-0da4e6fd9968.png">
-4. ![Screen Shot 2023-02-14 at 9 22 32 PM](https://user-images.githubusercontent.com/109550438/218929735-cc8fc25f-b1de-4b87-abfc-f2f25bddf314.png)
-5. ![Screen Shot 2023-02-14 at 9 23 48 PM](https://user-images.githubusercontent.com/109550438/218929899-4758b581-1a3c-4e85-a058-6c8ef304d018.png)
+## Product & Technical Considerations
 
+Building the application required combining data from separate systems into one coherent user experience.
 
+Baseball schedules, teams, stadiums, geographic locations, maps, and nearby lodging results needed to work together while remaining understandable to the user.
 
+The project provided hands-on experience with:
 
+- API-driven product development
+- Data flow between external services and user interfaces
+- Designing interfaces around structured baseball data
+- Translating technical constraints into product decisions
+- Location-aware user experiences
+- Client-side data caching
+- Responsive interface development
+- Iterative testing and debugging
 
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
+- Tailwind CSS
+- SportsData.io API
+- Google Maps / Places API
+- Local browser storage
+- Git / GitHub
+
+## Screenshots
+
+### Spring Training game and stadium discovery
+
+<img width="1384" alt="Spring Training Travel Planner game and stadium interface" src="https://user-images.githubusercontent.com/109550438/218866188-d11485c3-5060-4239-8715-606ca85cb462.png">
+
+### Game selection and nearby hotel search
+
+<img width="1384" alt="Spring Training Travel Planner hotel search interface" src="https://user-images.githubusercontent.com/109550438/218866206-9f7287bf-14d6-4f5d-a7de-13fe78a8f137.png">
+
+### Stadium mapping and travel planning
+
+<img width="1429" alt="Spring Training Travel Planner stadium map" src="https://user-images.githubusercontent.com/109550438/218866339-7a795d8b-53d0-4040-a5b3-0da4e6fd9968.png">
+
+### Additional application views
+
+![Spring Training Travel Planner application view](https://user-images.githubusercontent.com/109550438/218929735-cc8fc25f-b1de-4b87-abfc-f2f25bddf314.png)
+
+![Spring Training Travel Planner application view](https://user-images.githubusercontent.com/109550438/218929899-4758b581-1a3c-4e85-a058-6c8ef304d018.png)
+
+## Original Team
+
+This application originated as a three-person project in a University of Arizona software development program.
+
+- [Aaron DeVandry](https://github.com/adevandry), Primary Developer
+- [Amanda Hardin](https://github.com/AHardin77)
+- [Jeanna Vasquez-Garza](https://github.com/jeannav)
+
+The original repository and complete development history are preserved through this GitHub fork.
+
+## Project History
+
+This repository is maintained as a portfolio copy of the original team project. GitHub's fork relationship preserves the original repository, commit history, branches, and contributor attribution.
