@@ -1,6 +1,6 @@
 # Spring Training Travel Planner
 
-An API-driven baseball travel application that helps fans find MLB Spring Training games, locate stadiums, and discover nearby hotels in Arizona and Florida.
+An API-driven Spring Training travel planner for finding MLB games, stadiums, official team ticket links, and nearby hotels in Arizona and Florida.
 
 ## Overview
 
