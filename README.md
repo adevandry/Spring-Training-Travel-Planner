@@ -41,9 +41,9 @@ To deploy this project run
 
 📫 ## Authors
 
+- [Aaron DeVandry](https://www.github.com/adevandry)
 - [Amanda Hardin](https://www.github.com/AHardin77)
 - [Jeanna Vasquez-Garza](https://www.github.com/jeannav)
-- [Aaron DeVandry](https://www.github.com/adevandry)
 
 
 📫 ## Acknowledgements
